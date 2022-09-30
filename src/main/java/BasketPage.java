@@ -45,7 +45,7 @@ public class BasketPage extends BasePage {
 
     public void saveAdress() throws InterruptedException {
         Thread.sleep(2000);
-        clickElement(By.cssSelector("button[class='button green js-set-country js-prevent-emoji']"));
+        clickElement(By.xpath("//*[contains(text(),'KAYDET')]"));
     }
     public void chooseShippingFirm(){
         findElements(By.cssSelector("label[class='js-checkout-cargo-item']")).get(0).click();
